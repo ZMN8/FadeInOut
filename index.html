@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--[if IE 6]>
+    <script type="text/javascript" language="javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript" language="javascript">
+        //以下是IE6要支持的png图
+        DD_belatedPNG.fix('.flash_left,.flash_right,background,img');
+    </script>
+    <![endif]-->
+    <style>
+        body,ul,li,a,img,span,div{padding: 0;margin: 0;}
+        .flash{position:relative;width:900px;height:460px;margin: 50px auto 0;}
+        .flash_left,.flash_right{position:absolute;display: block;width: 113px;height:113px;background: url("images/icon.png");top:185px;z-index: 99;text-indent: -99em;overflow: hidden;}
+        .flash_left{background-position: 0 -113px;left: 0;}
+        .flash_right{background-position: 0 0;right:0;}
+        .flash_img{position: relative;width:100%;height:460px;}
+        .flash_img li{position: absolute;width:900px;height:460px;list-style: none;}
+        .flash_btn{position:absolute;z-index:99;width:100%;height:23px;background: rgba(234,234,234,0.6);bottom: 0;left:0;text-align: center;line-height: 99em;overflow: hidden;padding-top: 17px;}
+        .flash_btn span{display: inline-block;width:10px;height:10px;background-color: #3f3f3f;}
+        .flash_btn .flash_btnCur{background-color: #006dc7;}
+    </style>
+</head>
+<body>
+<div class="flash" id="flash">
+    <a id="flash_left" class="flash_left" href="javascript:void(0)" style="display: none;">左</a>
+    <ul class="flash_img" style="margin-left: 0;">
+        <li style=""><a href="##" target="_blank"><img src="images/1.jpg" alt="图1" /></a></li>
+        <li style="opacity:0;display: none;filter:alpha(opacity=0);"><a href="##" target="_blank"><img src="images/2.jpg" alt="图2" /></a></li>
+        <li style="opacity:0;display: none;filter:alpha(opacity=0);"><a href="##" target="_blank"><img src="images/3.jpg" alt="图3" /></a></li>
+    </ul>
+    <a id="flash_right" class="flash_right" href="javascript:void(0)" style="display: none;">右</a>
+    <div class="flash_btn">
+        <span class="flash_btnCur">1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</div>
+<script src="js/js.js"></script>
+</body>
+</html>
